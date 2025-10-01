@@ -1,34 +1,21 @@
 "use client";
 
-import { useRef, useState, useEffect } from "react";
+import { useState } from "react";
 import Image from "next/image";
+import { useInView } from "react-intersection-observer";
 
 export default function Piquetwo() {
-  const leftRef = useRef(null);
-  const [showVideo, setShowVideo] = useState(false);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        setShowVideo(entry.isIntersecting);
-      },
-      { threshold: 0.5 }
-    );
-
-    if (leftRef.current) observer.observe(leftRef.current);
-
-    return () => {
-      if (leftRef.current) observer.unobserve(leftRef.current);
-    };
-  }, []);
+  const { ref: leftRef, inView: showVideo } = useInView({
+    threshold: 0.5,
+    triggerOnce: false,
+  });
 
   return (
-    <div className="flex justify-center items-start gap-4 p-6">
+    <div className="flex flex-col lg:flex-row justify-center items-center lg:items-start gap-6 p-6">
       {/* Left Side: Image / Video */}
       <div
         ref={leftRef}
-        className="rounded-3xl overflow-hidden"
-        style={{ width: 680, height: 800 }}
+        className="rounded-3xl overflow-hidden w-full max-w-[680px] lg:w-[680px] lg:h-[800px] will-change-transform will-change-opacity"
       >
         {showVideo ? (
           <video
@@ -37,6 +24,8 @@ export default function Piquetwo() {
             loop
             playsInline
             muted
+            preload="auto"
+            poster="https://a-us.storyblok.com/f/1017006/1864x2333/f75518e100/sussex-portrait-card.jpg/m/450x677/filters:quality(80)"
             className="rounded-3xl object-cover w-full h-full"
           />
         ) : (
@@ -45,32 +34,31 @@ export default function Piquetwo() {
             alt="Sussex Taps"
             width={680}
             height={800}
-            className="rounded-3xl object-cover"
+            className="rounded-3xl object-cover w-full h-full"
           />
         )}
       </div>
 
       {/* Right Side: Main Image with Centered Overlay */}
       <div
-        className="relative rounded-3xl overflow-hidden"
-        style={{ width: 680, height: 800 }}
+        className="relative rounded-3xl overflow-hidden w-full max-w-[680px] lg:w-[680px] lg:h-[800px] sticky top-0"
       >
         <Image
           src="https://a-us.storyblok.com/f/1017006/1866x2805/5f879805d6/card-portrait.jpg/m/450x677/filters:quality(80)"
           alt="Chaleit"
           width={680}
           height={800}
-          className="rounded-3xl object-cover"
+          className="rounded-3xl object-cover w-full h-full"
         />
 
         {/* Centered small overlay image */}
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 rounded-2xl overflow-hidden">
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 rounded-2xl overflow-hidden w-[120px] h-[340px] sm:w-[150px] sm:h-[420px] lg:w-[201px] lg:h-[569px]">
           <Image
             src="https://a-us.storyblok.com/f/1017006/710x1530/d01797ffd7/inner-mobile.jpg/m/171x369/filters:quality(80)"
             alt="Chaleit Inner"
             width={201}
             height={569}
-            className="object-cover"
+            className="object-cover w-full h-full"
           />
         </div>
       </div>
