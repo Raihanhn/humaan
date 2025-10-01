@@ -60,7 +60,7 @@ export default function BrandsSection() {
       {/* Heading */}
       <div className="text-center px-6 transition-opacity duration-1000">
         <h2
-          className={`text-3xl sm:text-4xl md:text-5xl lg:text-[80px] font-semibold leading-[1.1] ${
+          className={`text-3xl sm:text-4xl md:text-5xl lg:text-[90px] font-semibold leading-[1.1] ${
             visible ? "opacity-100" : "opacity-0"
           }`}
         >
