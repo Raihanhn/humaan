@@ -4,12 +4,12 @@ import { motion } from "framer-motion";
 import useLenis from "../hooks/useLenis"; // adjust path
 import ShowreelSection from "../components/ShowreelSection";
 import BrandsSection from "../components/BrandsSection";
-import WorkGrid from "../components/WorkGrid";
 import Piqueone from "../components/Piqueone";
 import Piquetwo from "../components/Piquetwo";
 import Piquethree from "../components/Piquethree";
 
 import Greatwork from "@/components/Greatwork/Greatwork";
+import FeedSlider from "../components/FeedSlider";
 export default function Home() {
   useLenis(); // initialize smooth scrolling
 
@@ -74,6 +74,10 @@ export default function Home() {
 
     <div className="mx-auto px-8">
          <Greatwork />
+    </div>
+
+     <div className="mx-auto px-8">
+         <FeedSlider/>
     </div>
 
    
