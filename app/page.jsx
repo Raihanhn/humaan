@@ -85,11 +85,8 @@ export default function Home() {
     {/* <WorkGrid/> */}
 
    
-  
 
-    <div className="mb-60 h-screen">h</div>
-    <div className="mb-60 h-screen">h</div>
-
+ 
    </div>
   );
 }

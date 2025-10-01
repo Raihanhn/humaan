@@ -20,7 +20,9 @@ export default function RootLayout({ children }) {
 
         {/* Page Content */}
         <main className="">{children}</main>
-        <Footer />
+        <div className="mx-auto px-16">
+            <Footer />
+        </div>
       </body>
     </html>
   );
