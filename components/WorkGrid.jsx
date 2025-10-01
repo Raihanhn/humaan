@@ -69,14 +69,14 @@ export default function WorkGrid() {
                 width={450}
                 height={677}
               /> */}
-              <video
+              {/* <video
                 className="WorkCard_work-card__video__hb14D"
                 src="https://player.vimeo.com/progressive_redirect/playback/745004855/rendition/720p/file.mp4?loc=external&signature=1dd35b7b1001be056347f1aa639461cf56f40fc35b3f0ad75170809e8ca7d4e4"
                 autoPlay
                 loop
                 playsInline
                 muted
-              />
+              /> */}
             </div>
             <div className="WorkCard_work-card__content__Br9N4 WorkCard_work-card__content--white__ISlcm">
               <div className="WorkCard_work-card__content-inner__8Mqvf">
@@ -104,12 +104,12 @@ export default function WorkGrid() {
               /> */}
             </div>
             <div className="WorkCard_work-card__thumbnail-inner__YScRN">
-              <Image
+              {/* <Image
                 src="https://a-us.storyblok.com/f/1017006/710x1530/d01797ffd7/inner-mobile.jpg/m/171x369/filters:quality(80)"
                 alt="Chaleit Inner"
                 width={171}
                 height={369}
-              />
+              /> */}
             </div>
             <div className="WorkCard_work-card__content__Br9N4 WorkCard_work-card__content--white__ISlcm">
               <div className="WorkCard_work-card__content-inner__8Mqvf">
@@ -137,14 +137,14 @@ export default function WorkGrid() {
                 width={450}
                 height={330}
               />
-              {/* <video
+              <video
                 className="WorkCard_work-card__video__hb14D"
                 src="https://player.vimeo.com/progressive_redirect/playback/1003946122/rendition/1080p/file.mp4?loc=external&log_user=0&signature=4dc1bb46a33c3b7a087cfa76e691a8402c24499be0f4dab6fa9cd9c909d53425"
                 autoPlay
                 loop
                 playsInline
                 muted
-              /> */}
+              />
             </div>
             <div className="WorkCard_work-card__thumbnail-inner__YScRN">
               <Image

@@ -23,12 +23,11 @@ export default function Piquetwo() {
   }, []);
 
   return (
-    <div className="flex justify-center items-start gap-4 p-6">
+    <div className="flex flex-col lg:flex-row justify-center items-center gap-6 px-4 sm:px-6 lg:px-12 py-10">
       {/* Left Side: Image / Video */}
       <div
         ref={leftRef}
-        className="rounded-3xl overflow-hidden"
-        style={{ width: 680, height: 800 }}
+        className="rounded-3xl overflow-hidden w-full max-w-md sm:max-w-lg lg:max-w-[680px] aspect-[17/20]"
       >
         {showVideo ? (
           <video
@@ -43,8 +42,7 @@ export default function Piquetwo() {
           <Image
             src="https://a-us.storyblok.com/f/1017006/1864x2333/f75518e100/sussex-portrait-card.jpg/m/450x677/filters:quality(80)"
             alt="Sussex Taps"
-            width={680}
-            height={800}
+            fill
             className="rounded-3xl object-cover"
           />
         )}
@@ -52,25 +50,23 @@ export default function Piquetwo() {
 
       {/* Right Side: Main Image with Centered Overlay */}
       <div
-        className="relative rounded-3xl overflow-hidden"
-        style={{ width: 680, height: 800 }}
+        className="relative rounded-3xl overflow-hidden w-full max-w-md sm:max-w-lg lg:max-w-[680px] aspect-[17/20]"
       >
         <Image
           src="https://a-us.storyblok.com/f/1017006/1866x2805/5f879805d6/card-portrait.jpg/m/450x677/filters:quality(80)"
           alt="Chaleit"
-          width={680}
-          height={800}
+          fill
           className="rounded-3xl object-cover"
         />
 
         {/* Centered small overlay image */}
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 rounded-2xl overflow-hidden">
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[30%] sm:w-[25%] md:w-[40%]">
           <Image
             src="https://a-us.storyblok.com/f/1017006/710x1530/d01797ffd7/inner-mobile.jpg/m/171x369/filters:quality(80)"
             alt="Chaleit Inner"
             width={201}
             height={569}
-            className="object-cover"
+            className="object-cover rounded-2xl"
           />
         </div>
       </div>
