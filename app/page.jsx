@@ -1,5 +1,6 @@
-import Greatwork from "@/components/Greatwork/Greatwork";
+'use client'
 import Image from "next/image";
+import { motion } from "framer-motion";
 export default function Home() {
   return (
     <section className="mx-auto px-8">
@@ -34,18 +35,39 @@ export default function Home() {
       </div>
 
       {/* Hero Section */}
-      <div className="text-center mt-10">
-        <h1 className="text-6xl md:text-8xl font-bold leading-tight text-black">
+      {/* <div className=" mt-20 ">
+        <motion.h1
+          className=" text-[130px]  font-semibold leading-tight text-black text-left"
+          initial={{ opacity: 0, y: 50 }} 
+          animate={{ opacity: 1, y: 0 }} 
+          transition={{ duration: 0.8, ease: "easeOut" }}
+        >
           Extraordinary <br /> Digital Experiences
-        </h1>
-        <p className="mt-6 text-lg text-gray-700 max-w-2xl mx-auto">
-          We design, build and ship world-class digital products with strategy,
-          design and technology.
-        </p>
-        <button className="mt-8 px-6 py-3 bg-green-600 text-white rounded-full shadow-lg hover:bg-green-700 transition">
-          Get Started
-        </button>
-      </div>
+        </motion.h1>
+      </div> */}
+
+<div className="mt-20">
+  <motion.h1
+    className="
+      text-[60px]      /* Mobile */
+      sm:text-[80px]   /* Small screens */
+      md:text-[100px]  /* Medium screens */
+      lg:text-[130px]  /* Large screens */
+      font-semibold 
+      leading-tight 
+      text-black 
+      text-left
+    "
+    initial={{ opacity: 0, y: 50 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.8, ease: "easeOut" }}
+  >
+    Extraordinary <br /> Digital Experiences
+  </motion.h1>
+</div>
+
+ 
+
 
       {/* Example Featured Section */}
       <div className="grid md:grid-cols-3 gap-6 mt-16">
