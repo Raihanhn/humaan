@@ -62,13 +62,13 @@ export default function Navbar() {
     >
       <div className="mx-auto mt-4 px-2 py-3 flex justify-center items-center">
         
-        <ul className="hidden md:inline-flex gap-1  bg-white/60 backdrop-blur-md rounded-full px-2 py-3 shadow-sm"> 
+        <ul className="hidden  md:inline-flex gap-1  bg-white/60 backdrop-blur-md rounded-full px-2 py-3 shadow-sm"> 
           {navItems.map((item) => {
             const isActive = pathname === item.path;
             return (
             <li
                 key={item.name}
-                className="relative"
+                className="relative "
                 ref={item.name === "Expertise" ? popupRef : null}
               >
                 {item.name === "Expertise" ? (
@@ -93,17 +93,17 @@ export default function Navbar() {
                   >
                     {item.name}
                   </Link>
-                )}
+                )} 
 
                 
                 {item.name === "Expertise" && showExpertise && (
-                  <div className="absolute left-1/2 transform pt-60 mt-[-50px] -translate-x-1/2  w-[62vw] max-w-5xl bg-transparent rounded-3xl shadow-xl p-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+                  <div className="absolute left-1/2 transform pt-20 mt-[-40px] -translate-x-1/2  w-[62vw] max-w-5xl bg-white rounded-3xl shadow-xl p-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 z-[-10]">
                     {expertiseItems.map((section) => (
                       <div key={section.title}>
                         <h3 className="font-semibold text-gray-900 mb-4 text-lg">
                           {section.title}
                         </h3>
-                        <ul className="space-y-3">
+                        <ul className="space-y-3"> 
                           {section.items.map((sub) => (
                             <li
                               key={sub}
