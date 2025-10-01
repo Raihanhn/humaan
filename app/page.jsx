@@ -7,6 +7,7 @@ import BrandsSection from "../components/BrandsSection";
 import WorkGrid from "../components/WorkGrid";
 import Piqueone from "../components/Piqueone";
 import Piquetwo from "../components/Piquetwo";
+import Piquethree from "../components/Piquethree";
 
 export default function Home() {
   useLenis(); // initialize smooth scrolling
@@ -63,6 +64,10 @@ export default function Home() {
     </div>
      <div className="mx-auto px-8">
         <Piquetwo/>
+    </div>
+
+     <div className="mx-auto px-8">
+        <Piquethree/>
     </div>
 
     {/* <WorkGrid/> */}
