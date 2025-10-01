@@ -1,6 +1,7 @@
-'use client'
+"use client";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import Greatwork from "@/components/Greatwork/Greatwork";
 export default function Home() {
   return (
     <section className="mx-auto px-8">
@@ -46,9 +47,9 @@ export default function Home() {
         </motion.h1>
       </div> */}
 
-<div className="mt-20">
-  <motion.h1
-    className="
+      <div className="mt-20">
+        <motion.h1
+          className="
       text-[60px]      /* Mobile */
       sm:text-[80px]   /* Small screens */
       md:text-[100px]  /* Medium screens */
@@ -58,16 +59,13 @@ export default function Home() {
       text-black 
       text-left
     "
-    initial={{ opacity: 0, y: 50 }}
-    animate={{ opacity: 1, y: 0 }}
-    transition={{ duration: 0.8, ease: "easeOut" }}
-  >
-    Extraordinary <br /> Digital Experiences
-  </motion.h1>
-</div>
-
- 
-
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+        >
+          Extraordinary <br /> Digital Experiences
+        </motion.h1>
+      </div>
 
       {/* Example Featured Section */}
       <div className="grid md:grid-cols-3 gap-6 mt-16">
