@@ -35,16 +35,39 @@ export default function Home() {
       </div>
 
       {/* Hero Section */}
-      <div className=" mt-20 ">
+      {/* <div className=" mt-20 ">
         <motion.h1
           className=" text-[130px]  font-semibold leading-tight text-black text-left"
-          initial={{ opacity: 0, y: 50 }} // start below and invisible
-          animate={{ opacity: 1, y: 0 }} // animate up and visible
+          initial={{ opacity: 0, y: 50 }} 
+          animate={{ opacity: 1, y: 0 }} 
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
           Extraordinary <br /> Digital Experiences
         </motion.h1>
-      </div>
+      </div> */}
+
+<div className="mt-20">
+  <motion.h1
+    className="
+      text-[60px]      /* Mobile */
+      sm:text-[80px]   /* Small screens */
+      md:text-[100px]  /* Medium screens */
+      lg:text-[130px]  /* Large screens */
+      font-semibold 
+      leading-tight 
+      text-black 
+      text-left
+    "
+    initial={{ opacity: 0, y: 50 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.8, ease: "easeOut" }}
+  >
+    Extraordinary <br /> Digital Experiences
+  </motion.h1>
+</div>
+
+ 
+
 
     </section>
   );
