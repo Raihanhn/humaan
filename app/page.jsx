@@ -1,3 +1,4 @@
+'use client'
 import Image from "next/image";
 import { motion } from "framer-motion";
 export default function Home() {
@@ -34,35 +35,17 @@ export default function Home() {
       </div>
 
       {/* Hero Section */}
-      <div className="mt-10 max-w-4xl">
+      <div className=" mt-20 ">
         <motion.h1
-          className="text-6xl md:text-8xl font-bold leading-tight text-black text-left"
+          className=" text-[130px]  font-semibold leading-tight text-black text-left"
           initial={{ opacity: 0, y: 50 }} // start below and invisible
           animate={{ opacity: 1, y: 0 }} // animate up and visible
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
           Extraordinary <br /> Digital Experiences
         </motion.h1>
-
-        <motion.p
-          className="mt-6 text-lg text-gray-700 text-left"
-          initial={{ opacity: 0, y: 50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, ease: "easeOut", delay: 0.3 }} // delay for stagger
-        >
-          We design, build and ship world-class digital products with strategy,
-          design and technology.
-        </motion.p>
-
-        <motion.button
-          className="mt-8 px-6 py-3 bg-green-600 text-white rounded-full shadow-lg hover:bg-green-700 transition"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, ease: "easeOut", delay: 0.6 }}
-        >
-          Get Started
-        </motion.button>
       </div>
+
     </section>
   );
 }
