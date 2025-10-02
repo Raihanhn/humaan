@@ -4,7 +4,7 @@ import MobileNavbar from "../components/MobileNavbar";
 import Footer from "@/components/Footer";
 
 export const metadata = {
-  title: "Humaan Clone",
+  title: "Blink", 
   description: "Next.js + Tailwind floating navbar example",
 };
 
