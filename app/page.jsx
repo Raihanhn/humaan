@@ -94,11 +94,11 @@ export default function Home() {
         <Piquetwo/>
     </div> 
 
-     <div className="mx-auto px-8 bg-[#262262]">
+     <div className="mx-auto px-8 bg-[#262262]"> 
         <Piquethree/>
     </div>
 
-    <div className="mx-auto px-8 bg-[#262262]">
+    <div className="mx-auto px-8 "> 
          <Greatwork />
     </div>
 

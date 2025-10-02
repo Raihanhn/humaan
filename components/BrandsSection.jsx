@@ -52,7 +52,7 @@ export default function BrandsSection() {
   return (
     <section
       id="brands-section"
-      className={`transition-colors duration-1000 py-20 w-full relative overflow-hidden mt-20  ${
+      className={`transition-colors duration-1000 py-20 w-full relative overflow-hidden   ${
         visible ? "bg-[#262262] text-white" : "bg-transparent text-transparent"
       }`}
     >
