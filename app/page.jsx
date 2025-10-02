@@ -37,8 +37,8 @@ export default function Home() {
 
 <div className="flex items-center">
           <Image
-            src="/images/blink.PNG"
-            alt="Humaan Logo"
+            src="/images/blink.png"
+            alt="Blink Logo"
             width={50}
             height={50}
             className="object-contain"
@@ -49,8 +49,8 @@ export default function Home() {
 
         <div className="flex items-center">
           <Image
-            src="/images/logo.PNG"
-            alt="Humaan Logo"
+            src="/images/logo.png"
+            alt="Logo"
             width={50}
             height={50}
             className="object-contain"
