@@ -49,20 +49,15 @@ const Footer = () => {
 
       {/* Second Row */}
       <div className="flex flex-col md:flex-row gap-8 text-[#0f1d07] mb-16">
-        {/* USA */}
-        <div>
-          <p className="font-semibold">USA</p>
-          <p>Los Angeles, CA</p>
-          <p>contact@humaan.com</p>
-          <p>jason@humaan.com</p>
-        </div>
-
         {/* Australia */}
         <div>
           <p className="font-semibold">Australia</p>
-          <p>Perth, WA</p>
-          <p>contact@humaan.com.au</p>
-          <p>jay@humaan.com.au</p>
+          <p>Blink Developers</p>
+          <p>Sydney, New South Wales</p>
+          <p>Australia</p>
+          <p>Licence Number: 375726C</p>
+          <p>Call: 13 19 81</p>
+          <p>info@blinkdevelopments.com.au</p>  
         </div>
       </div>
 

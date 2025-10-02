@@ -17,14 +17,15 @@ export default function Piqueone() {
       {/* Centered Vimeo Iframe */}
       <div className="absolute inset-0 flex justify-center items-center px-4">
         <div className="w-full sm:w-[90%] md:w-[70%] lg:w-[70%] aspect-video rounded-3xl overflow-hidden shadow-lg">
-          <iframe
-            src="https://player.vimeo.com/video/1123789389?background=1&autoplay=1&loop=1&muted=1"
-            frameBorder="0"
-            allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
-            referrerPolicy="strict-origin-when-cross-origin"
-            className="w-full h-full object-cover"
-            title="blink_video_2"
-          ></iframe>
+        <iframe
+  src="https://player.vimeo.com/video/1123789389?background=1&autoplay=1&loop=1&muted=1&controls=0"
+  frameBorder="0"
+  allow="autoplay; fullscreen; picture-in-picture"
+  referrerPolicy="strict-origin-when-cross-origin"
+  className="w-full h-full object-cover"
+  title="blink_video_2"
+></iframe>
+
         </div>
       </div>
     </div>
