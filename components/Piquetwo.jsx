@@ -17,50 +17,31 @@ export default function Piquetwo() {
         ref={leftRef}
         className="rounded-3xl overflow-hidden w-full max-w-[680px] lg:w-[680px] lg:h-[800px] will-change-transform will-change-opacity"
       >
-        {showVideo ? (
-          <video
-            src="https://player.vimeo.com/progressive_redirect/playback/745004855/rendition/720p/file.mp4?loc=external&signature=1dd35b7b1001be056347f1aa639461cf56f40fc35b3f0ad75170809e8ca7d4e4"
-            autoPlay
-            loop
-            playsInline
-            muted
-            preload="auto"
-            poster="https://a-us.storyblok.com/f/1017006/1864x2333/f75518e100/sussex-portrait-card.jpg/m/450x677/filters:quality(80)"
+          <iframe
+            src="https://www.youtube.com/embed/2qDpts_smE0?autoplay=1&mute=1&loop=1&playlist=2qDpts_smE0&controls=0&modestbranding=1&rel=0"
+            title="YouTube video player"
+            frameBorder="0"
+            allow="autoplay; encrypted-media; clipboard-write; gyroscope; picture-in-picture"
+            referrerPolicy="strict-origin-when-cross-origin"
+            allowFullScreen
             className="rounded-3xl object-cover w-full h-full"
           />
-        ) : (
-          <Image
-            src="https://a-us.storyblok.com/f/1017006/1864x2333/f75518e100/sussex-portrait-card.jpg/m/450x677/filters:quality(80)"
-            alt="Sussex Taps"
-            width={680}
-            height={800}
-            className="rounded-3xl object-cover w-full h-full"
-          />
-        )}
+   
       </div>
 
       {/* Right Side: Main Image with Centered Overlay */}
-      <div
-        className="relative rounded-3xl overflow-hidden w-full max-w-[680px] lg:w-[680px] lg:h-[800px] sticky top-0"
-      >
-        <Image
-          src="https://a-us.storyblok.com/f/1017006/1866x2805/5f879805d6/card-portrait.jpg/m/450x677/filters:quality(80)"
-          alt="Chaleit"
-          width={680}
-          height={800}
-          className="rounded-3xl object-cover w-full h-full"
-        />
+      <div className="relative rounded-3xl overflow-hidden w-full max-w-[680px] lg:w-[680px] lg:h-[800px]  top-0">
+      
 
-        {/* Centered small overlay image */}
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 rounded-2xl overflow-hidden w-[120px] h-[340px] sm:w-[150px] sm:h-[420px] lg:w-[201px] lg:h-[569px]">
-          <Image
-            src="https://a-us.storyblok.com/f/1017006/710x1530/d01797ffd7/inner-mobile.jpg/m/171x369/filters:quality(80)"
-            alt="Chaleit Inner"
-            width={201}
-            height={569}
-            className="object-cover w-full h-full"
-          />
-        </div>
+         <iframe
+    src="https://www.youtube.com/embed/MFaB92dqDN8?autoplay=1&mute=1&loop=1&playlist=MFaB92dqDN8&controls=0&modestbranding=1&rel=0"
+    title="YouTube video player"
+    frameBorder="0"
+    allow="autoplay; encrypted-media; clipboard-write; gyroscope; picture-in-picture"
+    referrerPolicy="strict-origin-when-cross-origin"
+    allowFullScreen
+    className="absolute top-0 left-0 w-full h-full object-cover rounded-3xl"
+  />
       </div>
     </div>
   );
