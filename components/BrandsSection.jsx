@@ -52,8 +52,8 @@ export default function BrandsSection() {
   return (
     <section
       id="brands-section"
-      className={`transition-colors duration-1000 py-20 w-full relative overflow-hidden mt-20 ${
-        visible ? "bg-[#b488f1] text-white" : "bg-transparent text-transparent"
+      className={`transition-colors duration-1000 py-20 w-full relative overflow-hidden mt-20  ${
+        visible ? "bg-[#262262] text-white" : "bg-transparent text-transparent"
       }`}
     >
       {/* Heading */}

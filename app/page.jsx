@@ -39,9 +39,9 @@ export default function Home() {
           <Image
             src="/images/blink.png"
             alt="Blink Logo"
-            width={50}
-            height={50}
-            className="object-contain"
+            width={70}
+            height={70}
+            className="object-contain" 
           />
         </div>
 
@@ -51,8 +51,8 @@ export default function Home() {
           <Image
             src="/images/logo.png"
             alt="Logo"
-            width={50}
-            height={50}
+            width={30}
+            height={30}
             className="object-contain"
           />
         </div>
@@ -87,18 +87,18 @@ export default function Home() {
 
     <BrandsSection/>
 
-     <div className="mx-auto px-8">
+     <div className="mx-auto px-8 bg-[#262262]">
         <Piqueone/>
     </div>
-     <div className="mx-auto px-8">
+     <div className="mx-auto px-8 bg-[#262262]">
         <Piquetwo/>
     </div> 
 
-     <div className="mx-auto px-8">
+     <div className="mx-auto px-8 bg-[#262262]">
         <Piquethree/>
     </div>
 
-    <div className="mx-auto px-8">
+    <div className="mx-auto px-8 bg-[#262262]">
          <Greatwork />
     </div>
 

@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function Piqueone() {
   return (
-    <div className="relative w-full h-[120vh] sm:h-[100vh] xs:h-[80vh] rounded-3xl overflow-hidden mt-8">
+    <div className="relative bg-[#262262] w-full h-[120vh] sm:h-[100vh] xs:h-[80vh] rounded-3xl overflow-hidden pt-8 ">
       {/* Background Image */}
       <Image
         src="https://a-us.storyblok.com/f/1017006/3720x2312/168f233d1f/card-pique-landscape.jpg/m/450x330/filters:quality(80)"
