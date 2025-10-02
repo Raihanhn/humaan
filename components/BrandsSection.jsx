@@ -4,18 +4,18 @@ import Image from "next/image";
 
 // ✅ Replace with actual logo image URLs
 const brands = [
-  { name: "National breast cancer", src: "/logo/cancer.PNG" },
-  { name: "cocos keeling island", src: "/logo/cocos.PNG" },
-  { name: "Curtin University", src: "/logo/curtin.PNG" },
-  { name: "Deloitte", src: "/logo/detol.PNG" },
-  { name: "Cocos Keeling Islands", src: "/logo/cocos.PNG" },
-  { name: "Pay", src: "/logo/pay.PNG" },
-  { name: "Pentanet", src: "/logo/peanant.PNG" },
-  { name: "satterley", src: "/logo/saturday.PNG" },
+  { name: "National breast cancer", src: "/logo/1.jpg" },
+  { name: "cocos keeling island", src: "/logo/2.jpg" },
+  { name: "Curtin University", src: "/logo/3.jpg" },
+  { name: "Deloitte", src: "/logo/4.jpg" },
+  { name: "Cocos Keeling Islands", src: "/logo/5.jpg" },
+  { name: "Pay", src: "/logo/6.jpg" },
+  { name: "Pentanet", src: "/logo/7.jpg" },
+  { name: "satterley", src: "/logo/8.jpg" }, 
 ];
 
 export default function BrandsSection() {
-  const [current, setCurrent] = useState(0);
+  const [current, setCurrent] = useState(0); 
   const [visible, setVisible] = useState(false);
 
   // Intersection Observer → trigger when section enters viewport

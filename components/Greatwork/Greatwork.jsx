@@ -3,7 +3,7 @@ import React from "react";
 const Greatwork = () => {
   return (
     <section className=" ">
-      <h1 className="w-full leading-[1] text-[30px] sm:text-[70px] md:text-[80px] lg:text-[110px] xl:text-[130px] font-semibold mb-6 md:mb-8   text-[#0f1d07]">
+      <h1 className="w-full pt-52 leading-[1] text-[30px] sm:text-[70px] md:text-[80px] lg:text-[110px] xl:text-[130px] font-semibold mb-6 md:mb-8   text-[#0f1d07]">
         Great work for <br /> great☺people.
       </h1>
 
