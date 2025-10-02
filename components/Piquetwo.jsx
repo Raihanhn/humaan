@@ -52,9 +52,9 @@ export default function Piquetwo() {
         />
 
         {/* Centered small overlay image */}
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 rounded-2xl overflow-hidden w-[120px] h-[340px] sm:w-[150px] sm:h-[420px] lg:w-[201px] lg:h-[569px]">
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 rounded-2xl overflow-hidden w-[120px] h-[340px] sm:w-[150px] sm:h-[420px] lg:w-[401px] lg:h-[500px]">
           <Image
-            src="https://a-us.storyblok.com/f/1017006/710x1530/d01797ffd7/inner-mobile.jpg/m/171x369/filters:quality(80)"
+            src="/images/img4.jpg"
             alt="Chaleit Inner"
             width={201}
             height={569}
