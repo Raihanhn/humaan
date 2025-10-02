@@ -32,11 +32,11 @@ export default function ShowreelSection() {
   };
 
   return (
-    <section ref={sectionRef} className="mt-20 mx-auto px-8">
+    <section ref={sectionRef} className="mt-20 mx-auto px-8 ">
       <motion.div
         animate={{ scale: inView ? 1.1 : 1, borderRadius: inView ? "10px" : "30px" }}
         transition={{ duration: 0.8, ease: "easeInOut" }}
-        className="relative w-full max-w-[1200px] mx-auto shadow-xl"
+        className="relative w-full shadow-xl"
       >
         {/* Image fallback */}
         <div className="rounded-[30px] overflow-hidden">
