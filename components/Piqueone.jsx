@@ -11,7 +11,7 @@ export default function Piqueone() {
         alt="Pique"
         fill
         className="object-cover"
-        priority
+        priority 
       />
 
       {/* Centered Video */}

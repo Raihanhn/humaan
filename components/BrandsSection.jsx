@@ -83,13 +83,13 @@ export default function BrandsSection() {
             {group.map((brand) => (
               <div
                 key={brand.name}
-                className="relative w-28 h-12 md:w-40 md:h-16"
+                className="relative w-28 h-12 md:w-40 md:h-16  rounded-[5px] overflow-hidden"
               >
                 <Image
                   src={brand.src}
                   alt={brand.name}
                   fill
-                  className="object-contain"
+                  className="object-cover"
                 />
               </div>
             ))}
