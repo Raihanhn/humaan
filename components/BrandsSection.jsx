@@ -4,14 +4,14 @@ import Image from "next/image";
 
 // ✅ Replace with actual logo image URLs
 const brands = [
-  { name: "National breast cancer", src: "/logo/cancer.png" },
-  { name: "cocos keeling island", src: "/logo/cocos.png" },
-  { name: "Curtin University", src: "/logo/curtin.png" },
-  { name: "Deloitte", src: "/logo/detol.png" },
-  { name: "Cocos Keeling Islands", src: "/logo/cocos.png" },
-  { name: "Pay", src: "/logo/pay.png" },
-  { name: "Pentanet", src: "/logo/peanant.png" },
-  { name: "satterley", src: "/logo/saturday.png" },
+  { name: "National breast cancer", src: "/logo/cancer.PNG" },
+  { name: "cocos keeling island", src: "/logo/cocos.PNG" },
+  { name: "Curtin University", src: "/logo/curtin.PNG" },
+  { name: "Deloitte", src: "/logo/detol.PNG" },
+  { name: "Cocos Keeling Islands", src: "/logo/cocos.PNG" },
+  { name: "Pay", src: "/logo/pay.PNG" },
+  { name: "Pentanet", src: "/logo/peanant.PNG" },
+  { name: "satterley", src: "/logo/saturday.PNG" },
 ];
 
 export default function BrandsSection() {
