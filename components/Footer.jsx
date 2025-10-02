@@ -70,7 +70,7 @@ const Footer = () => {
       <div className="flex flex-col md:flex-row items-center justify-between border-t border-gray-300 pt-6 pb-12">
         {/* Left Side */}
         <div className="flex items-center gap-4 text-[#0f1d07]">
-          <span className="font-bold">humaan</span>
+          <span className="font-bold">Blink</span>
           <span>© 2025</span>
           <span className="underline cursor-pointer">Privacy</span>
         </div>
