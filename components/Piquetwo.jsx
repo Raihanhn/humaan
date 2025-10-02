@@ -40,9 +40,7 @@ export default function Piquetwo() {
       </div>
 
       {/* Right Side: Main Image with Centered Overlay */}
-      <div
-        className="relative rounded-3xl overflow-hidden w-full max-w-[680px] lg:w-[680px] lg:h-[800px] top-0"
-      >
+      <div className="relative rounded-3xl overflow-hidden w-full max-w-[680px] lg:w-[680px] lg:h-[800px] top-0">
         <Image
           src="https://a-us.storyblok.com/f/1017006/1866x2805/5f879805d6/card-portrait.jpg/m/450x677/filters:quality(80)"
           alt="Chaleit"
@@ -52,13 +50,22 @@ export default function Piquetwo() {
         />
 
         {/* Centered small overlay image */}
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 rounded-2xl overflow-hidden w-[120px] h-[340px] sm:w-[150px] sm:h-[420px] lg:w-[401px] lg:h-[500px]">
+        {/* <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 rounded-2xl overflow-hidden w-[120px] h-[340px] sm:w-[150px] sm:h-[420px] lg:w-[401px] lg:h-[500px]">
           <Image
             src="/images/img4.jpg"
             alt="Chaleit Inner"
             width={201}
             height={569}
             className="object-cover w-full h-full"
+          />
+        </div> */}
+
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 rounded-2xl overflow-hidden w-[50%] h-[60%] sm:w-[25%] sm:h-[70%] lg:w-[85%] lg:h-[80%]">
+          <Image
+            src="/images/img4.jpg"
+            alt="Chaleit Inner"
+            fill
+            className="object-cover"
           />
         </div>
       </div>
