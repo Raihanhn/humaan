@@ -14,17 +14,17 @@ export default function Piqueone() {
         priority 
       />
 
-      {/* Centered Video */}
+      {/* Centered Vimeo Iframe */}
       <div className="absolute inset-0 flex justify-center items-center px-4">
         <div className="w-full sm:w-[90%] md:w-[70%] lg:w-[70%] aspect-video rounded-3xl overflow-hidden shadow-lg">
-          <video
-            src="https://player.vimeo.com/progressive_redirect/playback/894026344/rendition/720p/file.mp4?loc=external&log_user=0&signature=defd0324929609083c0f37054720fef27100e9240b3a6eed5566f0d10cbf414a"
-            autoPlay
-            loop
-            playsInline
-            muted
+          <iframe
+            src="https://player.vimeo.com/video/1123789389?background=1&autoplay=1&loop=1&muted=1"
+            frameBorder="0"
+            allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+            referrerPolicy="strict-origin-when-cross-origin"
             className="w-full h-full object-cover"
-          />
+            title="blink_video_2"
+          ></iframe>
         </div>
       </div>
     </div>
